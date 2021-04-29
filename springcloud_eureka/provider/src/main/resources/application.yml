@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider
+
+server:
+  port: 9005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka,http://eureka9003.com:9003/eureka,http://eureka9004.com:9004/eureka

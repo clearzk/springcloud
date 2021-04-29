@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer
+
+server:
+  port: 9006
+
+eureka:
+  client:
+    register-with-eureka: false  #消费者不用注册自己
+    service-url:
+      defaultZone: http://10.1.2.161:9001/eureka,http://10.1.2.161:9003/eureka,http://10.1.2.161:9004/eureka
+

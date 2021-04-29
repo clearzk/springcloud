@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider
+
+server:
+  port: 7003
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.1.2.161:9001/eureka,http://10.1.2.161:9003/eureka,http://10.1.2.161:9004/eureka

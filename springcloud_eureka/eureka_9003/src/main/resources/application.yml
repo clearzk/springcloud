@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka9003
+server:
+  port: 9003
+eureka:
+  instance:
+#    hostname: eureka9003.com
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://10.1.2.161:9001/eureka,http://10.1.2.161:9004/eureka
